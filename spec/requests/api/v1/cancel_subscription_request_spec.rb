@@ -31,7 +31,7 @@ describe "Create a Subscription" do
     expect(response).to be_successful
     expect(created_subscription.status).to eq("active")
     
-    patch "/api/v1/subscriptions", headers: headers, params: JSON.generate(cancel_params)
+    patch "/api/v1/subscriptions/#{created_subscription.id}", headers: headers, params: JSON.generate(cancel_params)
 
     expect(response).to be_successful
     expect(created_subscription.status).to eq("cancelled")

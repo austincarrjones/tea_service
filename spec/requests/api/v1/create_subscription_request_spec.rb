@@ -34,6 +34,6 @@ describe "Create a Subscription" do
     expect(created_subscription.tea_id).to eq(subscription_params[:tea_id])
     expect(created_subscription.customer_id).to eq(subscription_params[:customer_id])
     expect(created_subscription.status).to eq("active")
-    expect(created_subscription.price).to eq(15.00)
+    expect(created_subscription.price).to eq(5.00)
   end
 end
