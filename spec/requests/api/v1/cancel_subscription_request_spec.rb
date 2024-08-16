@@ -21,19 +21,19 @@ describe "Create a Subscription" do
                             title: "Wind Down Tea Subscription",
                             frequency: "monthly"
                           })
+    cancel_params = ({status: "cancelled"})
     
     headers = {"CONTENT_TYPE" => "application/json"}
 
     post "/api/v1/subscriptions", headers: headers, params: JSON.generate(subscription_params)
     created_subscription = Subscription.last
-    # binding.pry
 
     expect(response).to be_successful
-    expect(created_subscription.title).to eq(subscription_params[:title])
-    expect(created_subscription.frequency).to eq(subscription_params[:frequency])
-    expect(created_subscription.tea_id).to eq(subscription_params[:tea_id])
-    expect(created_subscription.customer_id).to eq(subscription_params[:customer_id])
     expect(created_subscription.status).to eq("active")
-    expect(created_subscription.price).to eq(15.00)
+    
+    patch "/api/v1/subscriptions", headers: headers, params: JSON.generate(cancel_params)
+
+    expect(response).to be_successful
+    expect(created_subscription.status).to eq("cancelled")
   end
 end
