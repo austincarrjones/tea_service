@@ -27,13 +27,14 @@ describe "Create a Subscription" do
 
     post "/api/v1/subscriptions", headers: headers, params: JSON.generate(subscription_params)
     created_subscription = Subscription.last
-
+                
     expect(response).to be_successful
     expect(created_subscription.status).to eq("active")
     
     patch "/api/v1/subscriptions/#{created_subscription.id}", headers: headers, params: JSON.generate(cancel_params)
-
+    
     expect(response).to be_successful
+    created_subscription.reload
     expect(created_subscription.status).to eq("cancelled")
   end
 end

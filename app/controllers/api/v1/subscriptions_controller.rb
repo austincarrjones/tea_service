@@ -10,15 +10,17 @@ class Api::V1::SubscriptionsController < ApplicationController
   end
 
   def update
-    binding.pry
     subscription = Subscription.find(params[:id])
-    subscription.update(params[:status])
-    render json: SubscriptionSerializer.new(subscription), status: :updated
+    if subscription.update(subscription_params)
+      render json: SubscriptionSerializer.new(subscription), status: :ok
+    else
+      render json: { errors: subscription.errors.full_messages }, status: :unprocessable_entity
+    end
   end
 
   private
 
   def subscription_params
-    params.permit(:title, :frequency, :customer_id, :tea_id)
+    params.require(:subscription).permit(:title, :frequency, :customer_id, :tea_id, :status)
   end
 end
