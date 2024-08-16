@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-describe "Cancel a Subscription" do 
-  it "can cancel a new subscription record" do 
+describe "GET all customer subscriptions" do 
+  it "can get all subscription records for a customer" do 
     customer_1 = create(:customer)
     5.times do
       create(:tea)
@@ -15,12 +15,14 @@ describe "Cancel a Subscription" do
     expect(response).to be_successful
 
     subscriptions = JSON.parse(response.body, symbolize_names: true)[:data]
-    binding.pry
     expect(subscriptions.count).to eq(5)
 
     subscriptions.each do |subscription|
-      expect(subscription).to have_key(:customer_id)
-      expect(subscription).to have_key(:frequency)
+      expect(subscription[:attributes]).to have_key(:customer_id)
+      expect(subscription[:attributes]).to have_key(:tea_id)
+      expect(subscription[:attributes]).to have_key(:frequency)
+      expect(subscription[:attributes]).to have_key(:price)
+      expect(subscription[:attributes]).to have_key(:status)
     end
   end
 end
