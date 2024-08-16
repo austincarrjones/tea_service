@@ -5,7 +5,11 @@ describe "Create a Subscription" do
     customer_1 = Customer.create!(first_name: "Bilbo", 
                                   last_name: "Baggins", 
                                   email: "precious@example.com", 
-                                  address: "123 Bagend St, Shire, CO")
+                                  street_address: "123 Bagend St",
+                                  city: "Shire",
+                                  state: "ME",
+                                  postal_code: "80424",
+                                  country: "UK")
     tea_1 = Tea.create!(title: "Sleepytime Tea", 
                         description: "Relaxing", 
                         temperature: "80°C", 
@@ -20,8 +24,9 @@ describe "Create a Subscription" do
     
     headers = {"CONTENT_TYPE" => "application/json"}
 
-    post "/api/v1/subscriptions", headers: headers, params: JSON.generate(subscription: subscription_params)
+    post "/api/v1/subscriptions", headers: headers, params: JSON.generate(subscription_params)
     created_subscription = Subscription.last
+    # binding.pry
 
     expect(response).to be_successful
     expect(created_subscription.title).to eq(subscription_params[:title])

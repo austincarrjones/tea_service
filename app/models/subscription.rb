@@ -1,13 +1,14 @@
 class Subscription < ApplicationRecord
   belongs_to :customer
   belongs_to :tea
+  
+  before_save :set_status
+  before_save :calculate_price
 
-  validates :title, :price, :frequency, :status, presence: true
-  validates :price, numericality: { greater_than: 0 }
+  validates :title, :frequency, presence: true
 
   enum frequency: { weekly: 0, monthly: 1, quarterly: 2 }
 
-  before_save :calculate_price
 
   private
 
@@ -19,6 +20,10 @@ class Subscription < ApplicationRecord
     elsif frequency == 'quarterly'
       self.price = tea.price * 3
     end
+  end
+
+  def set_status
+    self.status ||= "active"
   end
 
 end

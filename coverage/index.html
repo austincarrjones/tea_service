@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2024-08-15T22:35:58-06:00">2024-08-15T22:35:58-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2024-08-15T23:47:37-06:00">2024-08-15T23:47:37-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="yellow">
-  85.71%
+  90.0%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
-       <span class="green">
-         1.07
+       <span class="red">
+         0.9
        </span>
     </span> hits/line
     )
@@ -39,15 +39,15 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>6</b> files in total.
+    <b>7</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>42</b> relevant lines,
+    <b>40</b> relevant lines,
     <span class="green"><b>36</b> lines covered</span> and
-    <span class="red"><b>6</b> lines missed. </span>
+    <span class="red"><b>4</b> lines missed. </span>
     (<span class="yellow">
-  85.71%
+  90.0%
 </span>
 )
   </div>
@@ -69,6 +69,28 @@
         </tr>
       </thead>
       <tbody>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#3047d6a48e73967da3d636e9d2bb2bb4aa86b2ea" class="src_link" title="app/controllers/api/v1/subscriptions_controller.rb">app/controllers/api/v1/subscriptions_controller.rb</a></td>
+            <td class="yellow strong cell--number t-file__coverage">88.89 %</td>
+            <td class="cell--number">17</td>
+            <td class="cell--number">9</td>
+            <td class="cell--number">8</td>
+            <td class="cell--number">1</td>
+            <td class="cell--number">0.89</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#6391e20a7ff7a22c388d1d439de4698baebf1a37" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">2</td>
+            <td class="cell--number">1</td>
+            <td class="cell--number">1</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.00</td>
+            
+          </tr>
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#078b86400578d59bd2450752abbc61a4764a4a0c" class="src_link" title="app/models/application_record.rb">app/models/application_record.rb</a></td>
@@ -94,12 +116,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#712ecaebdab076cca7c2407b2290ac667553097e" class="src_link" title="app/models/subscription.rb">app/models/subscription.rb</a></td>
-            <td class="red strong cell--number t-file__coverage">60.00 %</td>
-            <td class="cell--number">24</td>
-            <td class="cell--number">15</td>
-            <td class="cell--number">9</td>
-            <td class="cell--number">6</td>
-            <td class="cell--number">0.60</td>
+            <td class="yellow strong cell--number t-file__coverage">82.35 %</td>
+            <td class="cell--number">29</td>
+            <td class="cell--number">17</td>
+            <td class="cell--number">14</td>
+            <td class="cell--number">3</td>
+            <td class="cell--number">0.82</td>
             
           </tr>
         
@@ -115,24 +137,13 @@
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#a389c35f5b6cb97245ba895825121c60e18f8c5a" class="src_link" title="spec/models/subscription_spec.rb">spec/models/subscription_spec.rb</a></td>
+            <td class="strong t-file__name"><a href="#81a4c8a60b92121d4cabd812baf5e582b8641cc2" class="src_link" title="app/serializers/subscription_serializer.rb">app/serializers/subscription_serializer.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">15</td>
-            <td class="cell--number">10</td>
-            <td class="cell--number">10</td>
+            <td class="cell--number">4</td>
+            <td class="cell--number">3</td>
+            <td class="cell--number">3</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.60</td>
-            
-          </tr>
-        
-          <tr class="t-file">
-            <td class="strong t-file__name"><a href="#381c22db285db01ce2cc70616b98000e87f01e6d" class="src_link" title="spec/models/tea_spec.rb">spec/models/tea_spec.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">12</td>
-            <td class="cell--number">7</td>
-            <td class="cell--number">7</td>
-            <td class="cell--number">0</td>
-            <td class="cell--number">1.43</td>
+            <td class="cell--number">1.00</td>
             
           </tr>
         
@@ -152,6 +163,277 @@
       </div>
 
       <div class="source_files">
+      
+        <div class="source_table" id="3047d6a48e73967da3d636e9d2bb2bb4aa86b2ea">
+  <div class="header">
+    <h3>app/controllers/api/v1/subscriptions_controller.rb</h3>
+    <h4>
+      <span class="yellow">
+  88.89%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>9</b> relevant lines.
+      <span class="green"><b>8</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class Api::V1::SubscriptionsController &lt; ApplicationController</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def create</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    subscription = Subscription.new(subscription_params)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    if subscription.save</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      render json: SubscriptionSerializer.new(subscription), status: :created</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="7">
+            
+            
+
+            
+
+            <code class="ruby">    else</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby">      render json: { errors: subscription.errors.full_messages }, status: :unprocessable_entity</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="12">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  private</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="14">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def subscription_params</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="15">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    params.permit(:title, :frequency, :customer_id, :tea_id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="16">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="17">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="6391e20a7ff7a22c388d1d439de4698baebf1a37">
+  <div class="header">
+    <h3>app/controllers/application_controller.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>1</b> relevant lines.
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class ApplicationController &lt; ActionController::API</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
       
         <div class="source_table" id="078b86400578d59bd2450752abbc61a4764a4a0c">
   <div class="header">
@@ -318,8 +600,8 @@
   <div class="header">
     <h3>app/models/subscription.rb</h3>
     <h4>
-      <span class="red">
-  60.0%
+      <span class="yellow">
+  82.35%
 </span>
 
       lines covered
@@ -328,9 +610,9 @@
     
 
     <div class="t-line-summary">
-      <b>15</b> relevant lines.
-      <span class="green"><b>9</b> lines covered</span> and
-      <span class="red"><b>6</b> lines missed.</span>
+      <b>17</b> relevant lines.
+      <span class="green"><b>14</b> lines covered</span> and
+      <span class="red"><b>3</b> lines missed.</span>
     </div>
 
     
@@ -380,7 +662,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  </code>
           </li>
         </div>
       
@@ -391,7 +673,7 @@
 
             
 
-            <code class="ruby">  validates :title, :price, :frequency, :status, presence: true</code>
+            <code class="ruby">  before_save :set_status</code>
           </li>
         </div>
       
@@ -402,7 +684,7 @@
 
             
 
-            <code class="ruby">  validates :price, numericality: { greater_than: 0 }</code>
+            <code class="ruby">  before_save :calculate_price</code>
           </li>
         </div>
       
@@ -424,7 +706,7 @@
 
             
 
-            <code class="ruby">  enum frequency: { weekly: 0, monthly: 1, quarterly: 2 }</code>
+            <code class="ruby">  validates :title, :frequency, presence: true</code>
           </li>
         </div>
       
@@ -446,7 +728,7 @@
 
             
 
-            <code class="ruby">  before_save :calculate_price</code>
+            <code class="ruby">  enum frequency: { weekly: 0, monthly: 1, quarterly: 2 }</code>
           </li>
         </div>
       
@@ -462,7 +744,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="12">
+          <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="13">
             <span class="hits">1</span>
             
 
@@ -473,7 +766,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="13">
+          <li class="never" data-hits="" data-linenumber="14">
             
             
 
@@ -484,7 +777,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="14">
+          <li class="covered" data-hits="1" data-linenumber="15">
             <span class="hits">1</span>
             
 
@@ -495,24 +788,13 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="15">
-            
+          <li class="covered" data-hits="1" data-linenumber="16">
+            <span class="hits">1</span>
             
 
             
 
             <code class="ruby">    if frequency == &#39;weekly&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="16">
-            
-            
-
-            
-
-            <code class="ruby">      self.price = tea.price * 4</code>
           </li>
         </div>
       
@@ -523,29 +805,29 @@
 
             
 
+            <code class="ruby">      self.price = tea.price * 4</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="18">
+            <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">    elsif frequency == &#39;monthly&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="18">
-            
+          <li class="covered" data-hits="1" data-linenumber="19">
+            <span class="hits">1</span>
             
 
             
 
             <code class="ruby">      self.price = tea.price</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="19">
-            
-            
-
-            
-
-            <code class="ruby">    elsif frequency == &#39;quarterly&#39;</code>
           </li>
         </div>
       
@@ -556,18 +838,18 @@
 
             
 
-            <code class="ruby">      self.price = tea.price * 3</code>
+            <code class="ruby">    elsif frequency == &#39;quarterly&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="21">
+          <li class="missed" data-hits="0" data-linenumber="21">
             
             
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">      self.price = tea.price * 3</code>
           </li>
         </div>
       
@@ -578,7 +860,7 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -589,12 +871,67 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
           <li class="never" data-hits="" data-linenumber="24">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="25">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def set_status</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="26">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    self.status ||= &quot;active&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="27">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="28">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="29">
             
             
 
@@ -706,9 +1043,9 @@
 </div>
 
       
-        <div class="source_table" id="a389c35f5b6cb97245ba895825121c60e18f8c5a">
+        <div class="source_table" id="81a4c8a60b92121d4cabd812baf5e582b8641cc2">
   <div class="header">
-    <h3>spec/models/subscription_spec.rb</h3>
+    <h3>app/serializers/subscription_serializer.rb</h3>
     <h4>
       <span class="green">
   100.0%
@@ -720,8 +1057,8 @@
     
 
     <div class="t-line-summary">
-      <b>10</b> relevant lines.
-      <span class="green"><b>10</b> lines covered</span> and
+      <b>3</b> relevant lines.
+      <span class="green"><b>3</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -739,18 +1076,18 @@
 
             
 
-            <code class="ruby">require &#39;rails_helper&#39;</code>
+            <code class="ruby">class SubscriptionSerializer</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="2">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">  include JSONAPI::Serializer</code>
           </li>
         </div>
       
@@ -761,296 +1098,12 @@
 
             
 
-            <code class="ruby">RSpec.describe Subscription, type: :model do</code>
+            <code class="ruby">    attributes :title, :customer_id, :tea_id, :status, :frequency, :price</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="4">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  describe &quot;validations&quot; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="2" data-linenumber="5">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">    it { should validate_presence_of(:title) }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="2" data-linenumber="6">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">    it { should validate_presence_of(:price) }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="2" data-linenumber="7">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">    it { should validate_presence_of(:frequency) }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="2" data-linenumber="8">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">    it { should validate_presence_of(:status) }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="9">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="10">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="11">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  describe &quot;relationships&quot; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="2" data-linenumber="12">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">    it { should belong_to :customer}</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="2" data-linenumber="13">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">    it { should belong_to :tea}</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="14">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="15">
-            
-            
-
-            
-
-            <code class="ruby">end</code>
-          </li>
-        </div>
-      
-    </ol>
-  </pre>
-</div>
-
-      
-        <div class="source_table" id="381c22db285db01ce2cc70616b98000e87f01e6d">
-  <div class="header">
-    <h3>spec/models/tea_spec.rb</h3>
-    <h4>
-      <span class="green">
-  100.0%
-</span>
-
-      lines covered
-    </h4>
-
-    
-
-    <div class="t-line-summary">
-      <b>7</b> relevant lines.
-      <span class="green"><b>7</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-
-    
-
-  </div>
-
-  <pre>
-    <ol>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="1">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">require &#39;rails_helper&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="2">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="3">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">RSpec.describe Tea, type: :model do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="4">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  describe &quot;validations&quot; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="2" data-linenumber="5">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">    it { should validate_presence_of(:title) }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="2" data-linenumber="6">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">    it { should validate_presence_of(:price) }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="7">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="8">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="9">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  describe &quot;relationships&quot; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="2" data-linenumber="10">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">    it { should have_many :subscriptions}</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="11">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="12">
+          <li class="never" data-hits="" data-linenumber="4">
             
             
 
