@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-describe "Create a Subscription" do 
-  it "can create a new subscription record" do 
+describe "Cancel a Subscription" do 
+  it "can cancel a new subscription record" do 
     customer_1 = Customer.create!(first_name: "Bilbo", 
                                   last_name: "Baggins", 
                                   email: "precious@example.com", 
