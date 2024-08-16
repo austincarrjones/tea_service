@@ -24,9 +24,8 @@ describe "Create a Subscription" do
     
     headers = {"CONTENT_TYPE" => "application/json"}
 
-    post "/api/v1/subscriptions", headers: headers, params: JSON.generate(subscription_params)
+    post "/api/v1/customers/#{customer_1.id}/subscriptions", headers: headers, params: JSON.generate(subscription_params)
     created_subscription = Subscription.last
-    # binding.pry
 
     expect(response).to be_successful
     expect(created_subscription.title).to eq(subscription_params[:title])

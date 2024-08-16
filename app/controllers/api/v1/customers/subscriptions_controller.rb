@@ -1,4 +1,4 @@
-class Api::V1::SubscriptionsController < ApplicationController
+class Api::V1::Customers::SubscriptionsController < ApplicationController
 
   def create
     subscription = Subscription.new(subscription_params)
